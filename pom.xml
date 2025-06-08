@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -14,22 +15,17 @@
     <url>http://maven.apache.org</url>
 
     <properties>
-        <!-- - - - - - Encoding - - - - - -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- - - - - - Java - - - - - -->
         <java.version>17</java.version>
-        <!-- - - - - - Tests - - - - - -->
         <junit.jupiter.version>5.9.3</junit.jupiter.version>
-        <!-- - - - - - Sonar - - - - - -->
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.language>java</sonar.language>
-    </properties>
+        <sonar.host.url>http://localhost:9000</sonar.host.url> </properties>
 
     <dependencies>
 
-        <!-- - - - - - Tests - - - - - -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
